@@ -1,2 +1,2 @@
-# react-hooks-2
+# react-hooks-enhanced
 Useful react hooks
