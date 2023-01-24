@@ -1,0 +1,22 @@
+{
+  "name": "react-hooks-enhanced",
+  "version": "1.0.7",
+  "description": "",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files"
+  },
+  "author": "Danny O'Sullivan",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
