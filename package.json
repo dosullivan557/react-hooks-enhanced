@@ -1,13 +1,13 @@
 {
   "name": "react-hooks-enhanced",
-  "version": "1.0.16",
+  "version": "1.0.14",
   "description": "",
   "private": false,
   "main": "index.js",
+  "module": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:npm": "rm -rf dist && mkdir dist &&  babel src -d dist --copy-files && cp  README.md package.json dist/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Danny O'Sullivan",
   "license": "ISC",
