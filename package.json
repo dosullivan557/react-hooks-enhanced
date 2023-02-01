@@ -1,22 +1,24 @@
 {
   "name": "react-hooks-enhanced",
-  "version": "1.0.19",
-  "description": "",
-  "private": false,
-  "main": "index.js",
-  "module": "index.js",
-  "type": "module",
+  "version": "1.2.5",
+  "description": "Useful React Hooks",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "repository": {
+    "url": "https://github.com/dosullivan557/react-hooks-enhanced",
+    "directory": "src",
+    "type": "github"
   },
   "author": "Danny O'Sullivan",
   "license": "ISC",
   "peerDependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/preset-react": "^7.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
