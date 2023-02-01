@@ -4,8 +4,9 @@
 name: Publish to NPM
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -28,6 +29,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: npm ci
-      - run: npm publish src/hooks
+      - run: npm publish src
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
