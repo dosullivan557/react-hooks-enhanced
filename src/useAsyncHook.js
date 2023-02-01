@@ -1,4 +1,4 @@
-const { useState } = require("react");
+import { useState } from 'react';
 
 const useAsyncHook = (func) => {
   const [result, setResult] = useState();
@@ -19,3 +19,5 @@ const useAsyncHook = (func) => {
 
   return [result, error, isLoading];
 };
+
+export default useAsyncHook;

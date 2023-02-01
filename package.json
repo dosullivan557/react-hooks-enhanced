@@ -5,8 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
-    "format:verify":  "echo \"Error: no formatter specified\" && exit 0",
-    "lint":  "echo \"Error: no linter specified\" && exit 0"
+    "format": "prettier --single-quote --trailing-comma=none --write 'src/**/**.js' 'src/**.js'",
+    "format:verify": "prettier --single-quote --trailing-comma=none --list-different 'src/**/**.js' 'src/**.js'",
+    "lint": "eslint 'src/**/**.js' 'src/**.js'",
+    "lint:fix": "eslint --fix 'src/**/**.js' 'src/**.js'"
   },
   "keywords": [
     "react",
@@ -22,5 +24,10 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.3"
   }
 }
