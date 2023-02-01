@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "format:verify":  "echo \"Error: no formatter specified\" && exit 0",
-    "lint":  "echo \"Error: no linter specified\" && exit 0",
+    "lint":  "echo \"Error: no linter specified\" && exit 0"
   },
   "keywords": [
     "react",
