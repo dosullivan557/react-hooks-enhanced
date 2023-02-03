@@ -44,3 +44,28 @@ function App(props) {
 
 export default App;
 ```
+
+### useDebounce
+
+```js
+import React, { useState } from 'react';
+import { useDebounce } from "react-hooks-enhanced";
+
+const ExampleComponent = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const debouncedSearchTerm = useDebounce(searchTerm, 500);
+
+  useEffect(() => {
+    // Make API call or perform search with debouncedSearchTerm
+  }, [debouncedSearchTerm]);
+
+  return (
+    <div>
+      <input type="text" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+    </div>
+  );
+};
+
+export default ExampleComponent;
+
+```
