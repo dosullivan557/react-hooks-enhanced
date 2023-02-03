@@ -1,5 +1,7 @@
+import { useState, useEffect } from 'react';
+
 const useValidatedForm = (regex) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
