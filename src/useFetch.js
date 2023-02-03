@@ -1,4 +1,4 @@
-import useAsyncHook from "./useAsyncHook";
+import useAsyncHook from './useAsyncHook';
 
 /**
  * A custom hook for making API calls with headers and body.
@@ -11,9 +11,9 @@ import useAsyncHook from "./useAsyncHook";
 const useFetch = (url, body = null, headers = {}) => {
   const fetchData = async () => {
     const response = await fetch(url, {
-      method: "GET",
+      method: 'GET',
       headers: headers,
-      body: body ? JSON.stringify(body) : null,
+      body: body ? JSON.stringify(body) : null
     });
     return await response.json();
   };
