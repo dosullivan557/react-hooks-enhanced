@@ -1,5 +1,13 @@
 import { useState } from 'react';
 
+/**
+ * Custom hook for handling async operations
+ *
+ * @param {Function} func - The async function to be executed.
+ *
+ * @returns {Array} An array containing the result of the async function (if successful), any error (if there was one), and a boolean indicating if the function is still loading.
+ */
+
 const useAsyncHook = (func) => {
   const [result, setResult] = useState();
   const [error, setError] = useState();
