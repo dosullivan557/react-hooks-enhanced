@@ -17,6 +17,7 @@
         "react"
     ],
     "rules": {
+        "no-useless-escape": [0],
         "indent": [
             "error",
             2

@@ -48,11 +48,11 @@ export default App;
 ### useDebounce
 
 ```js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { useDebounce } from "react-hooks-enhanced";
 
 const ExampleComponent = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
 
   useEffect(() => {
@@ -61,11 +61,46 @@ const ExampleComponent = () => {
 
   return (
     <div>
-      <input type="text" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
     </div>
   );
 };
 
 export default ExampleComponent;
-
 ```
+
+### useValidatedForm
+
+There are a few regular expressions built in. See below how to use. See [here](#regular-expressions) what regular expressions are included.
+
+```js
+import React, { useState } from "react";
+import { useValidatedForm, regex } from "react-hooks-enhanced";
+
+function App() {
+  const [value, setValue, isValid] = useValidatedForm(regex.emailAddress);
+  return (
+    <div className="App">
+      <input onChange={(e) => setValue(e.target.value)} />
+      <p>{JSON.stringify(isValid)}</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Regular Expressions
+
+- Postcode 
+- Email Address
+- Complex Password
+- Moderate Password
+- AlphaNumeric Value
+- Username
+- Url
+- International Phone Number
