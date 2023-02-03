@@ -98,6 +98,24 @@ function App() {
 export default App;
 ```
 
+### useFetch
+
+```js
+import React, { useState } from "react";
+import { useFetch } from "react-hooks-enhanced";
+
+function App() {
+  const [value, setValue, isValid] = useFetch("www.google.com", { a: 1 }, 'Accept':"*/*");
+  return (
+    <div className="App">
+      <p>{JSON.stringify(value)}</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
 ## Regular Expressions
 
 - Postcode
