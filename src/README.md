@@ -1,6 +1,10 @@
-# React Hooks Enhanced
+# react-hooks-enhanced
+
+A library of enhanced and highly reusable React hooks for common tasks and functionality.
 
 ## Installation
+
+To install the latest version of `react-hooks-enhanced`, run the following command:
 
 ```sh
 npm install react-hooks-enhanced
@@ -96,7 +100,7 @@ export default App;
 
 ## Regular Expressions
 
-- Postcode 
+- Postcode
 - Email Address
 - Complex Password
 - Moderate Password
@@ -104,3 +108,11 @@ export default App;
 - Username
 - Url
 - International Phone Number
+
+## Contributing
+
+If you would like to contribute to the `react-hooks-enhanced` library, please fork the repository and submit a pull request. All contributions are welcome!
+
+## License
+
+The `react-hooks-enhanced` library is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
