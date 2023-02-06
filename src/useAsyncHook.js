@@ -9,8 +9,8 @@ import { useState } from 'react';
  */
 
 const useAsyncHook = (func) => {
-  const [result, setResult] = useState();
-  const [error, setError] = useState();
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const runner = async () => {
     try {

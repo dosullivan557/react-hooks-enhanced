@@ -1,4 +1,12 @@
 # react-hooks-enhanced
+![Publish to NPM](https://github.com/dosullivan557/react-hooks-enhanced/actions/workflows/publish.yml/badge.svg)
+![License](https://img.shields.io/npm/l/react-hooks-enhanced)
+![NPM version](https://img.shields.io/npm/v/react-hooks-enhanced)
+![downloads](https://img.shields.io/npm/dm/react-hooks-enhanced)
+![vulns](https://img.shields.io/snyk/vulnerabilities/github/dosullivan557/react-hooks-enhanced)
+
+Like this Module? Consider Starring the repo
+![https://img.shields.io/github/stars/dosullivan557/react-hooks-enhanced?style=social](https://img.shields.io/github/stars/dosullivan557/react-hooks-enhanced?style=social)
 
 A library of enhanced and highly reusable React hooks for common tasks and functionality.
 
