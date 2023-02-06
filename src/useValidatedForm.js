@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 /**
  * Custom hook for validating form input with a regular expression
@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
  * @returns {Array} An array containing the current input value, a function to set the input value, and a boolean indicating whether the input is valid or not.
  */
 const useValidatedForm = (regex) => {
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const [isValid, setIsValid] = useState(false);
 
   useEffect(() => {
