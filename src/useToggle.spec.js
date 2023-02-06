@@ -1,11 +1,11 @@
 /**
  * @jest-environment jsdom
  */
-const { default: useToggle } = require("./useToggle");
-import * as React from "react";
-import { renderHook, act } from "@testing-library/react";
+const { default: useToggle } = require('./useToggle');
+import * as React from 'react';
+import { renderHook, act } from '@testing-library/react';
 
-test("Default value", () => {
+test('Default value', () => {
   const { result } = renderHook(() => useToggle());
   expect(result.current[0]).toEqual(false);
   act(() => {
@@ -18,7 +18,7 @@ test("Default value", () => {
   });
   expect(result.current[0]).toEqual(false);
 });
-test("Negate", () => {
+test('Negate', () => {
   const { result } = renderHook(() => useToggle(true));
   expect(result.current[0]).toEqual(true);
   act(() => {
@@ -31,7 +31,7 @@ test("Negate", () => {
   });
   expect(result.current[0]).toEqual(true);
 });
-test("set value different value", () => {
+test('set value different value', () => {
   const { result } = renderHook(() => useToggle(true));
   expect(result.current[0]).toEqual(true);
   act(() => {
@@ -44,7 +44,7 @@ test("set value different value", () => {
   });
   expect(result.current[0]).toEqual(true);
 });
-test("set value same value", () => {
+test('set value same value', () => {
   const { result } = renderHook(() => useToggle(true));
   expect(result.current[0]).toEqual(true);
   act(() => {

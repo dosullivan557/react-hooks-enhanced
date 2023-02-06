@@ -14,8 +14,6 @@ jobs:
           node-version: 19.3.0
       - name: Install
         run: npm install
-      - name: Check
-        run: npm --v
       - name: Test
         run: npm run test
       - name: Format

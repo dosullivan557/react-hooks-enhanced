@@ -1,19 +1,19 @@
 /**
  * @jest-environment jsdom
  */
-import { act, renderHook } from "@testing-library/react";
-import { default as useScreenDimensions } from "./useScreenDimensions";
+import { act, renderHook } from '@testing-library/react';
+import { default as useScreenDimensions } from './useScreenDimensions';
 
-describe("useScreenDimensions", () => {
-  it("returns the correct screen dimensions", () => {
+describe('useScreenDimensions', () => {
+  it('returns the correct screen dimensions', () => {
     // Arrange
-    Object.defineProperty(window, "innerWidth", {
+    Object.defineProperty(window, 'innerWidth', {
       configurable: true,
-      value: 500,
+      value: 500
     });
-    Object.defineProperty(window, "innerHeight", {
+    Object.defineProperty(window, 'innerHeight', {
       configurable: true,
-      value: 600,
+      value: 600
     });
 
     // Act
@@ -44,11 +44,10 @@ describe("useScreenDimensions", () => {
       value: 700
     });
     act(() => {
-        window.dispatchEvent(new Event('resize'));
-      });
-  
+      window.dispatchEvent(new Event('resize'));
+    });
+
     // Assert
     expect(result.current).toEqual({ width: 800, height: 700 });
   });
-
 });

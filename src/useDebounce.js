@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { default as useTimeout } from "./useTimeout";
+import { useEffect } from 'react';
+import { default as useTimeout } from './useTimeout';
 /**
 
 /**

@@ -16,7 +16,10 @@
     "plugins": [
         "react"
     ],
+    "ignorePatterns": ["src/*.spec.js"],
+
     "rules": {
+        
         "no-useless-escape": [0],
         "indent": [
             "error",
