@@ -15,7 +15,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Check
-        run: nvm ls
+        run: npm --v
       - name: Test
         run: npm run test
       - name: Format
